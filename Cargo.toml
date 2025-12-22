@@ -1,0 +1,23 @@
+[package]
+name = "christmas_overclock"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+bevy = { version = "0.13", default-features = false, features = [
+  "bevy_winit",
+  "bevy_render",
+  "bevy_sprite",
+  "bevy_text",
+  "bevy_ui",
+  "png",
+  "wav",
+  "mp3",
+  "webgl2"
+]}
+
+rand="0.8"
+uuid = { version = "1.19.0", features = ["js"] }
+
+
+getrandom = { version = "0.3.4", features = ["wasm_js"] }
